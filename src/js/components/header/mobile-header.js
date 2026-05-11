@@ -23,7 +23,7 @@ class MobileHeader extends HTMLElement {
                 <i class="fa-solid fa-x text-gray-700 text-[10px]"></i>
             </div>
         </div>
-        <nav class="navigation relative py-[18px] px-[32px]">
+        <nav class="navigation relative py-[18px]">
             <div class="container flex items-center justify-between">
                 <div class="flex items-center gap-[4px]">
                     <div class="w-[24px] h-[24px] cursor-pointer navigation__burger"><i class="fa-solid fa-bars"></i>

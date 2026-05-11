@@ -7,7 +7,7 @@ class DesktopHeader extends HTMLElement {
   }
   render() {
     this.innerHTML = `
-        <header class="hidden lg:block">
+        <header class="hidden  lg:block">
         <div class="header__top bg-gray-100 relative py-[8px] h-[40px] flex items-center justify-center">
             <div class="flex gap-[12px] items-center">
                 <div class="flex items-center gap-[12px]">
@@ -25,7 +25,7 @@ class DesktopHeader extends HTMLElement {
                 <i class="fa-solid fa-x text-gray-700"></i>
             </div>
         </div>
-        <nav class="navigation py-[16px] px-[160px]">
+        <nav class="navigation  py-[16px]">
             <div class="container flex items-center justify-between">
                 <div class="navigation__logo"><a class="font-poppins font-medium text-[24px] leading-[24px] flex items-center" href="#">3legant.</a></div>
                 <ul class="navigation__list flex gap-[40px] ">

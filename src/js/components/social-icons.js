@@ -9,7 +9,6 @@ class SocialIcons extends HTMLElement {
     render(){
         this.innerHTML = 
         `
-        <link rel="stylesheet" href="/dist/output.css">
                     <div class="social-links flex gap-[24px]  w-full">
                         <img class="cursor-pointer" src="/src/assets/images/instagram.png" alt="instagram">
                         <img class="cursor-pointer" src="/src/assets/images/facebook.png" alt="facebook">

@@ -9,3 +9,22 @@
 .active{
     @apply !text-gray-900
 }
+.swiper-button-prev svg, 
+.swiper-button-next svg {
+    @apply hidden
+}
+.swiper-pagination{
+    @apply flex gap-4 items-center justify-center lg:mb-8 mb-4 w-2 h-2
+}
+.swiper-pagination span.swiper-pagination-bullet {
+    @apply !bg-white opacity-100 cursor-pointer
+}
+.swiper-pagination span.swiper-pagination-bullet-active{
+    @apply w-[30px] rounded
+}
+.container{
+    @apply !px-[5rem]
+}
+.hero-content{
+    @apply mb-10 lg:mt-8 flex md:flex-row lg:gap-[24px] flex-col justify-center items-center lg:justify-start gap-4
+}
