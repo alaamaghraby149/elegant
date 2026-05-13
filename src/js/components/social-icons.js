@@ -1,15 +1,11 @@
-class SocialIcons extends HTMLElement {
-    constructor(){
-        super()
-
-    }
+import { BaseComponent } from "./BaseComponent.js"
+export class SocialIcons extends BaseComponent {
     connectedCallback(){
-        this.render()
+        super.connectedCallback()
     }
-    render(){
-        this.innerHTML = 
-        `
-                    <div class="social-links flex gap-[24px]  w-full">
+    template(){
+        return `
+                    <div class="social-links flex gap-[24px] mt-[19.33px] w-full">
                         <img class="cursor-pointer" src="/src/assets/images/instagram.png" alt="instagram">
                         <img class="cursor-pointer" src="/src/assets/images/facebook.png" alt="facebook">
                         <img class="cursor-pointer" src="/src/assets/images/youtube.png" alt="youtube">
@@ -17,4 +13,4 @@ class SocialIcons extends HTMLElement {
         `
     }
 }
-customElements.define('social-icons',SocialIcons)
+SocialIcons.define('social-icons')
