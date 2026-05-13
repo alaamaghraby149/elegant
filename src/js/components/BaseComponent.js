@@ -19,7 +19,6 @@ export class BaseComponent extends HTMLElement {
   render() {
     this.innerHTML = this.template();
   }
-
   // Inject scoped styles (called once from connectedCallback)
   _injectStyles() {
     // If component defines optional styles() method, use it

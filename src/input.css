@@ -7,7 +7,7 @@
     @apply font-medium text-[14px] leading-[24px] text-gray-500
 }
 .active{
-    @apply !text-gray-900
+    @apply !text-gray-900 font-semibold
 }
 .swiper-button-prev svg, 
 .swiper-button-next svg {

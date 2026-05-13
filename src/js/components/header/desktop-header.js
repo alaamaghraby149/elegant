@@ -14,10 +14,10 @@ export class DesktopHeader extends BaseComponent {
             <a class="font-poppins font-medium text-[24px] leading-[24px]" href="#">3legant.</a>
 
             <ul class="flex gap-[40px]">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">Product</a></li>
-              <li><a href="#">Contact us</a></li>
+              <li class="active hover:text-black/50 transition duration-150 ease-in"><a href="#">Home</a></li>
+              <li class=" hover:text-black/50 transition duration-150 ease-in"><a href="#">Shop</a></li>
+              <li class=" hover:text-black/50 transition duration-150 ease-in"><a href="#">Product</a></li>
+              <li class=" hover:text-black/50 transition duration-150 ease-in"><a href="#">Contact us</a></li>
             </ul>
 
             <div class="flex items-center gap-[16px]">
