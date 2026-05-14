@@ -8,8 +8,9 @@ export class DesktopHeader extends BaseComponent {
 
         <promo-bar></promo-bar>
 
-        <nav class="py-[16px] px-[160px]">
-          <div class="flex items-center justify-between">
+        <nav class="py-[16px]">
+        <div class="container">
+                    <div class="flex items-center justify-between">
 
             <a class="font-poppins font-medium text-[24px] leading-[24px]" href="#">3legant.</a>
 
@@ -30,6 +31,8 @@ export class DesktopHeader extends BaseComponent {
             </div>
 
           </div>
+        </div>
+
         </nav>
 
       </header>

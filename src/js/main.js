@@ -1,6 +1,7 @@
 import "./components/header/header.js"
 import "./components/Hero.js"
 import "./components/AboutElegant.js"
+import "./components/Banner.js"
 // const app = document.getElementById("app")
 
 

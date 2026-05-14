@@ -1,5 +1,5 @@
 import { BaseComponent } from "../BaseComponent.js";
-
+import "/src/js/components/ShopNow.js"
 export class PromoBar extends BaseComponent {
   template() {
     return `
@@ -13,10 +13,7 @@ export class PromoBar extends BaseComponent {
         </div>
 
         <!-- "Shop Now" link: hidden on mobile, visible on desktop -->
-        <a class="hidden lg:flex text-secondary-blue items-center gap-[4px]" href="#">
-          Shop Now
-          <i class="fa-solid fa-arrow-right"></i>
-        </a>
+        <app-shop text-content="Shop now" border-color="border-secondary-blue" text-color="text-secondary-blue" class="hidden lg:flex"></app-shop>
 
         <!-- Close button -->
         <button class="absolute right-[20px] top-1/2 -translate-y-1/2 w-[16px] h-[16px] flex items-center justify-center" id="promo-close">
