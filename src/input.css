@@ -28,3 +28,8 @@
 .hero-content{
     @apply mb-10 lg:mt-8 flex md:flex-row lg:gap-[24px] flex-col justify-center items-center lg:justify-start gap-4
 }
+.product__item:hover .product__wishlist,
+.product__item:hover .add
+{
+    opacity: 1;
+}

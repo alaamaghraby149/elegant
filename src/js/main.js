@@ -1,12 +1,9 @@
 import "./components/header/header.js"
+import "./components/Button.js"
+import "./components/social-icons.js"
 import "./components/Hero.js"
 import "./components/AboutElegant.js"
-import "./components/Banner.js"
-// const app = document.getElementById("app")
+import "./components/banner/Banner.js"
+import "./components/banner/BannerCard.js"
+import "./components/ProductCarousel.js"
 
-
-// const header = document.createElement("app-header");
-// const heroSlider = document.createElement('app-hero');
-
-// app.append(header);
-// app.append(heroSlider);

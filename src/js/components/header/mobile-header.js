@@ -1,16 +1,6 @@
 import { BaseComponent } from "../BaseComponent.js";
 import "./promo-bar.js";
 import "./mobile-menu.js";
-
-/**
- * MobileHeader — owns `menuOpen` state.
- *
- * State flow:
- *   burger click          → setState({ menuOpen: true })
- *   "menu-close" event ↑  → setState({ menuOpen: false })  [fired by MobileMenu]
- *
- * Passes state DOWN to <mobile-menu> via `open` attribute.
- */
 export class MobileHeader extends BaseComponent {
   connectedCallback() {
     this.state = { menuOpen: false };

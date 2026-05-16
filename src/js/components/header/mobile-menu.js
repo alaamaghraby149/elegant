@@ -1,6 +1,4 @@
 import { BaseComponent } from "../BaseComponent.js";
-import "/src/js/components/button.js";
-import "/src/js/components/social-icons.js";
 
 /**
  * MobileMenu — controlled component (presentational only).
@@ -81,7 +79,7 @@ export class MobileMenu extends BaseComponent {
               </div>
             </li>
           </ul>
-          <app-button></app-button>
+          <app-button title="Sign In"></app-button>
           <!-- Social icons -->
           <social-icons></social-icons>
         </div>

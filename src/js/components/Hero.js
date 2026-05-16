@@ -5,7 +5,7 @@ export class Hero extends BaseComponent {
     super.connectedCallback();
 
     requestAnimationFrame(() => {
-        new Swiper(this.querySelector('.mySwiper'), {
+        new Swiper(this.querySelector('.swiper'), {
           loop: true,
           pagination: {
             el: '.swiper-pagination',
@@ -27,7 +27,7 @@ export class Hero extends BaseComponent {
     return  `
 <!-- Slider main container -->
 <div class="container mb-8 lg:mb-0 h-[304px] lg:h-full  ">
-  <div class="swiper overflow-hidden h-full w-full mySwiper lg:mb-[32px]">
+  <div class="swiper overflow-hidden h-full w-full lg:mb-[32px]">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper w-full h-full">
       <!-- Slides -->

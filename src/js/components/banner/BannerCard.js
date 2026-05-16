@@ -1,8 +1,8 @@
-import { BaseComponent } from "./BaseComponent.js";
-import "./CardTitle.js";
+import { BaseComponent } from "/src/js/components/BaseComponent.js";
 
 export class BannerCard extends BaseComponent {
   template() {
+    const textContent = this.getAttribute("text-content") || ""
     const src = this.getAttribute("src") || "";
     const title = this.getAttribute("title") || "";
     const variant = this.getAttribute("variant") || "living";
@@ -17,10 +17,12 @@ export class BannerCard extends BaseComponent {
       <div class="banner-card relative w-full h-full">
         <img class="w-full h-full object-cover" src="${src}" alt="${title}">
 
-        <app-title
-          class="absolute ${positions[variant]}"
-          title="${title}">
-        </app-title>
+        <div class ="absolute flex flex-col gap-[12px] ${positions[variant]}">
+              <h5 class="text-[28px] lg:text-[34px] leading-[38px] tracking-[-0.6px] font-medium ">${textContent}</h5>
+              <app-button variant="secondary" extra-classes="border-black">
+                Shop now <i class="fa-solid fa-arrow-right"></i>
+              </app-button>
+            </div>
       </div>
     `;
   }
@@ -35,4 +37,4 @@ export class BannerCard extends BaseComponent {
   }
 }
 
-BannerCard.define("app-card");
+BannerCard.define("banner-card");
