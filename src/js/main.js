@@ -7,4 +7,5 @@ import "./components/banner/Banner.js"
 import "./components/banner/BannerCard.js"
 import "./components/ProductCarousel.js"
 import "./components/Value.js"
+import "./components/Sales.js"
 
