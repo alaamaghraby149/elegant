@@ -33,3 +33,9 @@
 {
     opacity: 1;
 }
+.card:hover i {
+    @apply scale-110 transition ease-in delay-100 rotate-2
+}
+.card:hover{
+    @apply shadow-lg transition delay-100 ease-in
+}
