@@ -17,7 +17,6 @@ export class ProductCarousel extends BaseComponent {
             }
             const result = await response.json()
             this.products = result
-            console.log(result)
             this.filteredProducts()
             this.updateUI()
         } catch (error) {
@@ -55,17 +54,13 @@ export class ProductCarousel extends BaseComponent {
                 return `
             <div class="carousel lg:mt-0">
                 <div class="container pt-[32px]">
-                    <div class="title flex items-center justify-between">
-                        <h4 class="flex flex-col font-medium  text-[40px] leading-[44px] tracking-[-0.4px] font-poppins">
-                        <span>New</span>
-                        <span>Arrivals</span>
-                        </h4>
-                        <div class="hidden lg:block">
-                            <app-button variant="secondary">
-                                More Products <i class="fa-solid fa-arrow-right"></i>
-                            </app-button>
-                        </div>
-                    </div>
+                    <app-head 
+                    head-title="New Arrivals"
+                    title="More Products"
+                    
+                     >
+
+                    </app-head>
                     <div class="swiper newarrivalSwiper mt-12">
                         <div class="swiper-wrapper">
                         ${this.visibleProducts.map(product=>{
