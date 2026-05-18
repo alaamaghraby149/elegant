@@ -3,12 +3,17 @@ import "./promo-bar.js";
 
 export class DesktopHeader extends BaseComponent {
   template() {
+    const variant = this.getAttribute("variant") || "light";
+    const navBG =
+      variant === "light"
+        ? "bg-white"
+        : "bg-secondary-orange";
     return `
       <header class="hidden lg:block">
 
-        <promo-bar></promo-bar>
+        <promo-bar variant="${variant}"></promo-bar>
 
-        <nav class="py-[16px]">
+        <nav  class="py-[16px] ${navBG}">
         <div class="container">
                     <div class="flex items-center justify-between">
 

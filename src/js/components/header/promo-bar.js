@@ -2,18 +2,25 @@ import { BaseComponent } from "../BaseComponent.js";
 
 export class PromoBar extends BaseComponent {
   template() {
+    const variant = this.getAttribute("variant") || "light";
+
+    const styles = {
+    light: "bg-gray-100 text-black",
+    dark: "bg-gray-900 text-white",
+    btn : variant === "light" ? "text-secondary-blue border-secondary-blue" : "text-secondary-orange border-secondary-orange"
+  };
     return `
-      <div class="bg-gray-100 relative h-[40px] flex items-center justify-center gap-[12px]">
+      <div class="${styles[variant]} relative h-[40px] flex items-center justify-center gap-[12px]">
 
         <div class="flex items-center gap-[12px]">
-          <img class="w-[16px] h-[16px]" src="./src/assets/images/ticket-percent.svg" alt="">
+          <i class="fa-solid fa-ticket"></i>
           <p class="font-inter font-semibold text-[12px] lg:text-[14px] leading-[20px]">
             30% off storewide — Limited time!
           </p>
         </div>
 
         <!-- "Shop Now" link: hidden on mobile, visible on desktop -->
-        <app-button variant="secondary" extra-classes="border-secondary-blue" text-color="text-secondary-blue" class="hidden lg:flex">
+        <app-button variant="secondary" text-color="${styles.btn}" class="hidden lg:flex">
           Shop now <i class="fa-solid fa-arrow-right"></i>
         </app-button>
 

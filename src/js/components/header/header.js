@@ -4,9 +4,14 @@ import "./mobile-header.js";
 
 export class Header extends BaseComponent {
   template() {
+    const variant = this.getAttribute("variant") || "light";
+    const navBG =
+      variant === "light"
+        ? "bg-white"
+        : "bg-secondary-orange";
     return `
-      <desktop-header></desktop-header>
-      <mobile-header></mobile-header>
+      <desktop-header variant="${variant}" ></desktop-header>
+      <mobile-header variant="${variant}"></mobile-header>
     `;
   }
 }

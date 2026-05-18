@@ -8,13 +8,18 @@ export class MobileHeader extends BaseComponent {
   }
 
   template() {
+    const variant = this.getAttribute("variant") || "light";
+    const navBG =
+      variant === "light"
+        ? "bg-white"
+        : "bg-secondary-orange";
     return `
       <header class="lg:hidden">
 
         <!-- Promo bar: shared between mobile and desktop -->
-        <promo-bar></promo-bar>
+        <promo-bar variant="${variant}"></promo-bar>
 
-        <nav class="relative py-[18px] px-[32px]">
+        <nav class="relative py-[18px] px-[32px] ${navBG}">
           <div class="flex items-center justify-between">
 
             <!-- Left: burger + logo -->
