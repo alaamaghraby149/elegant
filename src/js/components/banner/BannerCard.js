@@ -9,8 +9,8 @@ export class BannerCard extends BaseComponent {
 
     const positions = {
       living: "top-[32px] left-[32px] lg:top-[48px] lg:left-[48px]",
-      bedroom: "top-[82px] left-[32px] lg:top-[201px] lg:left-[32px]",
-      kitchen: "top-[82px] left-[32px] lg:top-[201px] lg:left-[32px]",
+      bedroom: "top-[82px] left-[32px] lg:top-[190px] lg:left-[32px]",
+      kitchen: "top-[82px] left-[32px] lg:top-[190px] lg:left-[32px]",
     };
 
     return `

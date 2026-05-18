@@ -7,7 +7,7 @@ export class Sales extends BaseComponent{
       <div class="w-full  py-[85.5px] lg:py-0 flex flex-col justify-center  gap-[24px] bg-gray-100 pr-[160px] pl-[72px]">
         <div class="title w-full flex justify-center flex-col gap-[16px] lg:w-[452px] h-auto">
           <span class="sale text-secondary-blue font-inter leading-[16px] font-bold uppercase">SALE UP TO 35% OFF</span>
-          <h4 class="font-poppins font-medium text-[34px] lg:text-[40px] leading-[44px] text-gray-900">
+          <h4 class="font-poppins font-medium w-full text-[34px] lg:text-[40px] leading-[44px] text-gray-900">
             HUNDREDS of 
 New lower prices!
           </h4>

@@ -57,38 +57,6 @@ export class Button extends BaseComponent {
         ${this._content}
       </button>
     `;
-
-    // const variant = this.getAttribute("variant") || "primary";
-    // const textColor = this.getAttribute("text-color") || "text-black";
-    // const borderColor = this.getAttribute("border-color") || "border-black";
-    // const content =
-    //   this._slotContent?.trim() || this.getAttribute("title") || "";
-
-    // const base = `
-    //   flex items-center justify-center gap-[4px]
-    //   font-inter font-medium text-[18px] leading-[32px]
-    //   transition ease-in-out duration-300
-    // `;
-
-    // let primaryClasses = `
-    //   bg-primary-primary border-2 hover:bg-white hover:text-black
-    //   hover:border-black text-white text-[18px] leading-[32px]
-    //   py-[10px] px-[26px] my-[19.33px] w-full h-[52px] shrink-0 rounded-[6px]
-    // `;
-
-    // let variantClasses = `
-    //   text-[14px] lg:flex items-center border-b
-    //   ${textColor} ${borderColor} gap-[4px]
-    // `;
-
-    // if (variant === "secondary") {
-    //   return `<button class="${variantClasses}">
-    //   ${content}
-
-    //   </button>`;
-    // }
-
-    // return `<button class="${primaryClasses}">${content}</button>`;
   }
 }
 

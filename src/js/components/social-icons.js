@@ -5,10 +5,10 @@ export class SocialIcons extends BaseComponent {
     }
     template(){
         return `
-                    <div class="social-links flex gap-[24px] mt-[19.33px] w-full">
-                        <img class="cursor-pointer" src="/src/assets/images/instagram.png" alt="instagram">
-                        <img class="cursor-pointer" src="/src/assets/images/facebook.png" alt="facebook">
-                        <img class="cursor-pointer" src="/src/assets/images/youtube.png" alt="youtube">
+                    <div class="social-links flex items-center gap-[24px] mt-[19.33px] w-full">
+                        <i class="fa-brands fa-square-instagram cursor-pointer text-2xl"></i>
+                        <i class="fa-brands fa-facebook cursor-pointer text-2xl"></i>
+                        <i class="fa-brands fa-youtube cursor-pointer text-2xl"></i>
                     </div>
         `
     }
